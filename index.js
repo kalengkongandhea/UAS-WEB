@@ -2,8 +2,6 @@ const express = require('express');
 
 const app = express();
 
-app.set('view engine', 'ejs');
-
 const homeRouter = require('./routes/home');
 const productRouter = require('./routes/product');
 const bukuRouter = require('./routes/buku');
