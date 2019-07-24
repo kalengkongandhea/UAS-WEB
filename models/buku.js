@@ -5,11 +5,11 @@ const sequelize = require('../configs/sequelize');
 class Buku extends Sequelize.Model {}
 
 Buku.init({
+  isbn: Sequelize.STRING,
   judul: Sequelize.STRING,
-  penerbit: Sequelize.STRING,
-  penulis: Sequelize.STRING,
-  jumlahHalaman: Sequelize.STRING,
-  harga: Sequelize.INTEGER
+  jumlah_halaman: Sequelize.STRING,
+  harga: Sequelize.INTEGER,
+  penerbitId: Sequelize.INTEGER
 }, { sequelize, modelName: 'buku' });
 
 module.exports = Buku;
